@@ -1,0 +1,28 @@
+{
+  "name": "cobaembas",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "buildimage": "docker build -t cobaembas ."
+  },
+  "dependencies": {
+    "@mocobaas/server-sdk": "^2.15.6",
+    "@mocobaas/shared": "file:sharedScripts",
+    "lodash": "^4",
+    "moment": "^2"
+  },
+  "devDependencies": {
+    "nodemon": "^2"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "rbac/*",
+      "migrations/*",
+      "swagger/*",
+      "*.test.js"
+    ],
+    "delay": "3000",
+    "signal": "SIGHUP",
+    "ext": "js,json,gql"
+  }
+}

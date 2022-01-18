@@ -1,0 +1,28 @@
+{
+  "tables": [
+    {
+      "name": "users",
+      "relationships": []
+    },
+    {
+      "name": "books",
+      "relationships": [
+        {
+          "name": "book_category_data",
+          "foreignKey": "fk_books_book_category_book_categories_id",
+          "type": "belongsTo"
+        }
+      ]
+    },
+    {
+      "name": "book_categories",
+      "relationships": [
+        {
+          "name": "books_book_category_list",
+          "foreignKey": "fk_books_book_category_book_categories_id",
+          "type": "hasMany"
+        }
+      ]
+    }
+  ]
+}

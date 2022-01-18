@@ -1,0 +1,1 @@
+require("@mocobaas/server-sdk")();

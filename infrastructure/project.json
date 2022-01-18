@@ -1,0 +1,10 @@
+{
+  "name": "cobaembas",
+  "namespace": "KY9HW465",
+  "description": "",
+  "envList": [
+    "development",
+    "production",
+    "test"
+  ]
+}

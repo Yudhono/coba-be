@@ -1,0 +1,75 @@
+{
+  "permissions": [
+    {
+      "table": "users",
+      "role": "Administrator",
+      "select": "all",
+      "insert": [
+        "id",
+        "email",
+        "password",
+        "social_ids",
+        "name"
+      ],
+      "update": [
+        "id",
+        "email",
+        "social_ids",
+        "name"
+      ],
+      "delete": true
+    },
+    {
+      "table": "users",
+      "role": "Anonymous",
+      "select": [],
+      "insert": [],
+      "update": [],
+      "delete": false
+    },
+    {
+      "table": "users",
+      "role": "siswa",
+      "select": "all",
+      "insert": [
+        "updated_at",
+        "roles",
+        "email",
+        "password",
+        "social_ids",
+        "name",
+        "id",
+        "created_at",
+        "deactivated_at"
+      ],
+      "update": [
+        "id",
+        "created_at",
+        "updated_at",
+        "deactivated_at",
+        "roles",
+        "email",
+        "password",
+        "social_ids",
+        "name"
+      ],
+      "delete": true
+    },
+    {
+      "delete": true,
+      "insert": "all",
+      "role": "Administrator",
+      "select": "all",
+      "table": "book_categories",
+      "update": "all"
+    },
+    {
+      "delete": true,
+      "insert": "all",
+      "role": "Administrator",
+      "select": "all",
+      "table": "books",
+      "update": "all"
+    }
+  ]
+}

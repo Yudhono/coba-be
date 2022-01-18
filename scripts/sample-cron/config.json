@@ -1,0 +1,6 @@
+{
+  "enable": true,
+  "policy": { "role": [] },
+  "trigger": { "schedule": "*/30 * * * */3", "type": "EVENT" },
+  "version": 1
+}

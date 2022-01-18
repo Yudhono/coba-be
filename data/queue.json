@@ -1,0 +1,20 @@
+{
+  "queue": [
+    {
+      "name": "Ring-tailedLemur1",
+      "publicAccess": "false",
+      "type": "jobQueue"
+    },
+    {
+      "name": "Ring-tailedLemur2",
+      "publicAccess": "true",
+      "type": "jobQueue"
+    },
+    {
+      "name": "logs",
+      "publicAccess": true,
+      "type": "jobQueue",
+      "associatedScript": null
+    }
+  ]
+}

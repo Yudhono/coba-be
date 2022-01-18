@@ -1,0 +1,4 @@
+## request body
+type body {
+  book_name: String!
+}
